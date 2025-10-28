@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const number = 5;
+  const square = (num) =>  {
+    return num =  num*num ;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,8 +23,7 @@ function App() {
         >
           Learn React
         </a>
-        <button>изменения</button>
-        <button>изменения1</button>
+        <button>{square(number)}</button>
       </header>
     </div>
   );
